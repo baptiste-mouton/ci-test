@@ -6,9 +6,10 @@ pipeline {
 		}
 	}
 	stages {
-		stage('Build') {
+		stage('build') {
 			steps {
-				echo 'Hello !'
+				echo 'building...'
+				sh 'npm --version'
 			}
 		}
 	}
